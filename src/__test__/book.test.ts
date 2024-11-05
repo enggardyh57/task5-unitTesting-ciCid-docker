@@ -58,7 +58,7 @@ describe("Book API", () => {
     },
   ];
 
-  const validToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVuZ2dhcmR5YWgiLCJpYXQiOjE3MzA4MDMxMzIsImV4cCI6MTczMDgwNjczMn0.eiCMzNAsGJh0slDEeVtCzr1qbbdrt8bhdM1ggyhIYOs"; 
+  const validToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVuZ2dhcmR5YWgiLCJpYXQiOjE3MzA4MDQ2OTcsImV4cCI6MTczMDgwODI5N30.kQP3tWgcSKHUPFyuFryhUQl3KvzX39jQfBzG0ihzVFA"; 
 
   test("POST /books - success", async () => {
     const newBook = exampleBooks[0];
