@@ -1,6 +1,5 @@
 name: Express MongoDB CI/CD
 
-# Memicu workflow saat push ke branch main
 on:
   push:
     branches:
