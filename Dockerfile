@@ -1,18 +1,23 @@
-FROM node:16-alpine
+# Gunakan image node sebagai base image
+FROM node:18
 
+# Set working directory dalam container
 WORKDIR /app
 
-# Salin package.json dan package-lock.json ke dalam image
+# Copy file package.json dan package-lock.json untuk instalasi dependencies
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Salin semua file dari src ke dalam image
-COPY src/ ./src
+# Copy seluruh source code ke container
+COPY . .
 
-# Expose port yang akan digunakan
+# Compile TypeScript menjadi JavaScript
+RUN npm run build
+
+# Ekspose port yang akan digunakan oleh aplikasi
 EXPOSE 4000
 
 # Perintah untuk menjalankan aplikasi
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]

@@ -1,21 +1,30 @@
-version: '3.8'
-
 services:
-  db:
-    image: mongo:latest
-    volumes:
-      - db_data:/data/db
-
   app:
     build:
-      context: .  # Mengarah ke root proyek
-      dockerfile: Dockerfile  # Tentukan Dockerfile jika namanya berbeda
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - '4000:4000'  
-    depends_on:
-      - db
+      - "4000:4000"
     environment:
-      - MONGODB_URI=mongodb://db:27017/testdb
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongo:27017/testdb
+    depends_on:
+      - mongo
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:6
+    # ports:
+    #   - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
 
 volumes:
-  db_data:
+  mongo-data:
