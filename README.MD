@@ -9,6 +9,8 @@ Mengembangkan management buku task 4
 7. 	Docker ✔
 http://localhost:4000/api-docs/
 
+Setiap mau test masukkan token terbaru yang didapatkan dari login ke src/__test__/book.test.ts dan masukkan ke variabel validToken.
+
 
 Tampilan API Manajemen Buku
 
@@ -16,25 +18,15 @@ Tampilan API Manajemen Buku
 
 
 Unit Testing
-
-![alt text]( https://github.com/enggardyh57/https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/unit%20testing.png?raw=true)
+![alt text]( https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/unit testing.png?raw=true)
 
 
 CI/CD Github Action
+![alt text]( https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/cicd.png?raw=true)
 
-![alt text]( https://github.com/enggardyh57/https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/cicd.png?raw=true)
-
-![alt text]( https://github.com/enggardyh57/https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/deploy.png?raw=true)
-
+![alt text]( https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/deploy.png?raw=true)
 
 Docker 
-![alt text]( https://github.com/enggardyh57/https://github.com/enggardyh57/ https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/docker.png?raw=true)
-
-
-
-
-
-
-
+![alt text]( https://github.com/enggardyh57/task5-unitTesting-ciCid-docker/blob/main/img/docker.png?raw=true)
 
 
